@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>Inabanga Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+    
+            body{
+                font-size: 15px;
+                font-family: tahoma;
+                background: white;
+                margin: auto;
+            
+            }
+
+            .developer{
+                margin: auto;
+                margin-top: 3%;
+                width: 90%;
+                background-color:rgb(19, 104, 104) ;
+                
+            }
+            
+    
+            img{
+                max-width: 100%;
+            
+            }
+    
+            .ourprofile{
+                padding: 60px 0 20px;
+                overflow: hidden;
+             
+             
+    
+            }
+    
+            h2,h3{
+                font-size: 20px;
+                font-family: tahoma;
+            }
+    
+            .our-team{
+                margin-bottom: 200px;
+                position: relative;
+            }
+    
+            .our-team .pichover{
+                position: absolute;
+                margin: 25px;
+                left: 0%;
+                right: 0%;
+                top: 0%;
+                bottom: 0%;
+                
+            }
+    
+            .our-team .pichover .piccover{
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                bottom: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto -75px;
+                z-index: 2;
+                border-radius: 300px;
+                opacity: 0.7;
+                filter: alpha(opacity=70);
+    
+            }
+    
+            .our-team:hover .pichover .piccover{
+                height: auto;
+                width: auto;
+                border-radius: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+    
+            .our-team:hover .date{
+                top: auto;
+                bottom: 0;
+                margin-bottom: 20px;
+            }
+    
+            .our-team .date{
+                position: absolute;
+                color: black;
+                text-align: center;
+                text-transform: uppercase;
+                left: 0;
+                right: 0;
+                top: 50px;
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                z-index: 3;
+                margin: -12px auto 0;
+            }
+    
+            .our-team .hover-info{
+                position: absolute;
+                top: 100%;
+                margin-top: -25px;
+                left: 0;
+                right: 10px;
+                text-align: center;
+                z-index: 4;
+            }
+    
+            .our-team:hover .hover-info{
+                top: 0;
+                margin-top: 25px;
+            }
+    
+            .our-team .hover-info img{
+                border: 3px solid white;
+                border-radius: 200px;
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 18px;
+            }
+    
+            .our-team:hover .hover-info h2,
+            .our-team:hover .hover-info h2,
+            .our-team:hover .hover-info p{
+                color: black  !important;
+    
+            }
+    
+            .our-team .hover-info p{
+                font-size: 15px;
+                font-style: italic;
+            }
+    
+            .our-team .hover-info p{
+                color: #4c4c4c;
+            text-decoration: none;
+            }
+    
+            .our-team .hover-info .profession,
+                .our-team .hover-info p{
+                display: none;
+                margin-bottom: 20px;
+            }
+           
+    
+           
+            .our-team:hover .hover-info  .hover-name,
+            .our-team:hover .hover-info  .profession,
+            .our-team:hover .hover-info  p{
+                display: block;
+               
+            }
+    
+            .our-team:hover .pichover{
+                background: rgba(255, 255, 255, 0.568) !important;
+                width: 250px;
+                height: 450px;
+                margin-left: 70px;
+               
+            }
+    
+        
+    
+            .our-team .pichover .piccover,
+            .our-team:hover .hover-info .piccover,
+            .our-team .hover-info,
+            .our-team .date{
+                transition: ease-in-out 0.3s;
+            }
+
+            .coverpic{
+                width: 350px;
+                padding: 15px;
+                margin-left: 22px;
+                
+
+                
+            }
+
+
+            @media(max-width: 700px){
+
+                .coverpic{
+                width: 350px;
+                padding: 10px;
+                margin-left: 1%;
+                margin-top: -1%;
+                }
+
+                .our-team:hover .pichover{
+                background: rgba(255, 255, 255, 0.568) !important;
+                width: 250px;
+                height: 350px;
+                margin-left: 50px;
+               
+            }
+           
+            .developer{
+                margin: auto;
+                width: 90%;
+                margin-top: 5%;
+                
+            }
+    
+            
+            }
+             .description p{
+                font-size: 8px;
+                text-align: left;
+                padding: 10px;
+                padding-top: -40px;
+            }
+            h2,h3{
+                font-size: 15px;
+                font-family: tahoma;
+            }
+            .our-team .date{
+                position: absolute;
+                color: black;
+                text-align: center;
+                text-transform: uppercase;
+                left: 0;
+                right: 0;
+                top: 50px;
+                font-size: 12px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                z-index: 3;
+                margin: -12px auto 0;
+            }
+
+            .our-team .hover-info img{
+                border: 3px solid white;
+                border-radius: 80px;
+                width: 90px;
+                height: 90px;
+                margin: 0 auto 10px;
+            }
+
+            .our-team .pichover .piccover,
+            .our-team:hover .hover-info .piccover,
+            .our-team .hover-info{
+                transition: ease-in-out 0.3s;
+            }
+    
+                .nav-links ul li{
+            display: block;
+        }
+        .nav-links{
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+
+
+    
+    
+        </style>
+    
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="image/image4.png"</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#"><i class="fa fa-times" onclick="hideMenu()"></i></a>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutUs.html">ABOUT US</a></li>
+                        <li><a href="barangay.html">BARANGAY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Profile.html">DEVELOPER</a></li>
+                    </ul>
+
+                </div>
+                <a href="#"><i class="fa fa-bars" onclick="showMenu()"></i></a>
+            </nav>
+            <br>
+            <h1>DEVELOPER</h1>
+            <br>
+            <br>
+
+
+        </section>
+
+        <section class="developer">
+            <div class="ourprofile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="our-team">
+                                <div class="piccover">
+                                  <a href=""> <img src="image/img4.jpg" alt="" class="coverpic"></a>
+                                </div>        
+                                 
+                                    <div class="pichover">
+                                        <div class="hovercover real"></div>
+                                        <h3 class="date">OCTOBER 11, 2001</h3>
+                                        <div class="hover-info">
+                                            <img src="image/img5.jpg" alt="">
+                                            <h2 class="hover-name">ZEA MIYS G. CAMINSI</h2>
+                                            <h2 class="profession">Web Developer</h2>
+                                            <p class="description"> 
+                                                AGE: 21 <br>
+                                                SEX: Female <br>
+                                                EMAIL: zmcaminsi@gmail.com <br>
+                                                ADDRESS: Cagawasan, Inabanga, Bohol <br>
+                                            </p>
+                                        
+                                        </div>   
+                                     </div>    
+                            
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="col-md-4">
+                            <div class="our-team">
+                                <div class="piccover">
+                                  <a href=""> <img src="image/img2.jpg" alt="" class="coverpic"></a>        
+                                 </div>
+                                 <div class="pichover">
+                                    <div class="hovercover real"></div>
+                                    <h3 class="date">AUGUST 18, 2001</h3>
+                                    <div class="hover-info">
+                                        <img src="image/img6.jpg" alt="">
+                                        <h2 class="hover-name">JEROME DELA CERNA</h2>
+                                        <h2 class="profession">Web Developer</h2>
+                                        <p class="description"> 
+                                            AGE: 21 <br>
+                                            SEX: Male <br>
+                                            EMAIL: djeromerussel@gmail.com <br>
+                                            ADDRESS: Clarin, Bohol <br>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="col-md-4">
+                            <div class="our-team">
+                                <div class="piccover">
+                                  <a href=""> <img src="image/img3.jpg" alt="" class="coverpic"></a>        
+                                 </div>
+                                 <div class="pichover">
+                                    <div class="hovercover real"></div>
+                                    <h3 class="date">OCTOBER 11, 2000</h3>
+                                    <div class="hover-info">
+                                        <img src="image/img7.jpg" alt="">
+                                        <h2 class="hover-name">JAMES CARL MONTANEZ</h2>
+                                        <h2 class="profession">Web Developer</h2>
+                                        <p class="description"> 
+                                            AGE: 22 <br>
+                                            SEX: Male <br>
+                                            EMAIL: sumiyathesecond@gmail.com <br>
+                                            ADDRESS: Macaas, Tubigon, Bohol <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    
+                    
+                     </div>
+            
+
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row1">
+                    <div class="footer-col">
+                        <h4>Municipality</h4>
+                        <ul>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">our services</a></li>
+                            <li><a href="">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Direction</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Department</h4>
+                        <ul>
+                            <li><a href="">RHU</a></li>
+                            <li><a href="">DEPED</a></li>
+                            <li><a href="">BFAR</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+            
+        
+
+
+        
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        
+
+       
+
+    </body>
+</html>
